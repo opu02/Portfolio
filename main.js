@@ -5,3 +5,12 @@ var typed = new Typed('.text', {
     backDelay: 1000,
     loop: true
 });
+
+function toggleVideo() {
+    const video = document.getElementById('myAboutVideo');
+    if (video.paused) {
+        video.play();
+    } else {
+        video.pause();
+    }
+}

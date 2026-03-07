@@ -917,3 +917,36 @@ section{
         margin-top: 50px;
     }
 }
+
+/* Styling for the video to match your circular design */
+/* Circle size boro kora holo */
+.about-circle {
+    width: 450px;  /* Age 350px chilo, ekhon boro kora holo */
+    height: 450px; 
+    border-radius: 50%;
+    background: linear-gradient(45deg, #0ef, #ff00ff);
+    padding: 10px; /* Border-ti arektu boro dekhanor jonno padding barano holo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0, 238, 255, 0.6); /* Glow arektu barano holo */
+    transition: 0.5s ease; /* Hover effect smooth korar jonno */
+}
+
+/* Video-ti jate circle er shathe thake */
+.about-video {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* Responsive adjustment for the video */
+@media (max-width: 992px) {
+    .about-circle {
+        width: 300px; /* Slightly smaller for tablets/mobile */
+        height: 300px;
+    }
+}
