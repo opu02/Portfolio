@@ -539,9 +539,9 @@ section{
 .main-text {
     width: 100%;       
     text-align: center;
-    margin-bottom: 50px;
-    padding-top: 130px; 
-    margin-top: 170px;
+    margin-bottom: 30px; /* Reduced from 50px */
+    padding-top: 80px;   /* Reduced from 130px */
+    margin-top: 50px;    /* Reduced from 170px */
 }
 
 .main-text h2 {
@@ -554,11 +554,11 @@ section{
 }
 .portfolio-content {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Better responsiveness */
     gap: 30px;
     padding: 20px 10%;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 20px; /* Reduced from 50px */
 }
 
 .row {
@@ -566,7 +566,7 @@ section{
     overflow: hidden;
     border-radius: 8px;
     cursor: pointer;
-    height: 450px; 
+    height: 400px; /* Slightly reduced for better fit */
     box-shadow: 0 0 15px rgba(0, 238, 255, 0.3);
 }
 
